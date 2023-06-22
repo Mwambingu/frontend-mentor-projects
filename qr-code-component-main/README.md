@@ -23,6 +23,8 @@ My solution to a QR Code component implementation challenge from Frontend Mentor
 
 -   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
+### My process
+
 ### Built with
 
 -   Semantic HTML5 markup
