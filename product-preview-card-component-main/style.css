@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    height: 1200px;
+    width: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cream);
+}
+
+.content-container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.content-size {
+    height: 450px;
+    width: 300px;
+}
+
+.img-container {
+    background: left/contain url("./images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info-container div {
+    width: 240px;
+    padding-left: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item-type {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--dark-grayish-blue);
+}
+
+.item-price,
+.item,
+.prev-price {
+    font-family: "Fraunces", sans-serif;
+}
+
+.item {
+    text-transform: capitalize;
+    font-size: 2.2em;
+}
+
+.item-info {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    color: var(--dark-grayish-blue);
+}
+
+.info-container .item-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 170px;
+    font-size: 1.5em;
+    color: var(--dark-cyan);
+}
+
+.prev-price {
+    text-decoration: line-through;
+    font-size: 0.5em;
+    color: var(--dark-grayish-blue);
+}
+
+.info-container .add-btn {
+    display: flex;
+    height: 40px;
+    width: 250px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.add-btn img {
+    padding-right: 10px;
+}
+
+.attribution a {
+    text-decoration: underline;
+    color: var(--dark-grayish-blue);
+    transition: text-decoration 0.25s, color 0.25s, font-size 0.25s;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.attribution a:hover {
+    color: var(--dark-cyan);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
