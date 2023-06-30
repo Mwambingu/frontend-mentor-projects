@@ -167,7 +167,7 @@ body {
 .qr-image {
     height: 280px;
     width: 280px;
-    background: center/100% 100% url("/images/image-qr-code.png");
+    background: center/100% url("./images/image-qr-code.png");
 }
 
 .qr-image,
